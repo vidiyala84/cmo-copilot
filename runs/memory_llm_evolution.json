@@ -1,0 +1,295 @@
+{
+  "n_questions": 100,
+  "sessions_done": 5,
+  "stopped": null,
+  "evolution": [
+    {
+      "session": 1,
+      "overall_pct": 50.5,
+      "simple_pct": 67.5,
+      "medium_pct": 34.0,
+      "complex_pct": 49.8,
+      "trap_pct": 34.0,
+      "avg_recalled_per_decision": 1.9,
+      "gates_confirmed": 76,
+      "gates_revised": 60,
+      "total_gates": 9,
+      "gate_book": [
+        {
+          "topic": "noise",
+          "lesson": "When a metric is stable within normal week-to-week variance and shows no meaningful deterioration or opportunity, do not adjust budget or strategy."
+        },
+        {
+          "topic": "audience_saturation",
+          "lesson": "When a campaign shows a significant ROAS drop driven by falling CVR while CTR remains stable, prioritize diagnosing and fixing conversion path issues (e.g., landing page, offer, funnel friction) before cutting budget."
+        },
+        {
+          "topic": "creative_fatigue",
+          "lesson": "When retargeting ROAS drops significantly while CVR remains stable but CTR declines, prioritize diagnosing and optimizing ad visibility, targeting, or creative relevance before assuming a conversion path issue."
+        },
+        {
+          "topic": "emerging_segment",
+          "lesson": "When a narrowly defined audience segment shows a substantially higher ROAS (>80% above account average) on even a small fraction of spend, prioritize allocating incremental budget to that segment before rebalancing within broader campaigns."
+        },
+        {
+          "topic": "tracking_outage",
+          "lesson": "When a campaign\u2019s ROAS drops sharply while CTR remains stable and conversions are suspected to be unrecorded, prioritize investigating tracking and conversion setup before adjusting targeting."
+        },
+        {
+          "topic": "seasonality",
+          "lesson": "When all campaigns show nearly identical percentage declines in ROAS and similar metrics across platforms and objectives, pause creative changes and first investigate external factors (e.g., seasonality, macro trends, or platform-wide shifts) before attributing performance drops to campaign-specific issues."
+        },
+        {
+          "topic": "brand_demand_dip",
+          "lesson": "When a high-ROAS, brand-intent campaign shows a sudden ROAS drop but maintains stable CTR and CVR, avoid intervening\u2014its performance is likely driven by external demand shifts, not funnel inefficiencies, and it will typically self-correct without action."
+        },
+        {
+          "topic": "learning_phase",
+          "lesson": "When a campaign has recently been rebuilt and is still in its learning phase, avoid making additional creative or structural changes until it has fully exited the learning phase."
+        },
+        {
+          "topic": "multi",
+          "lesson": "When multiple campaigns show simultaneous ROAS declines with differing magnitudes and root causes, prioritize diagnosing and addressing the *lowest-ROAS, highest-spend* underperforming campaign first\u2014not just the largest drop\u2014because it exerts disproportionate drag on overall account efficiency and masks uncaptured audience potential."
+        }
+      ]
+    },
+    {
+      "session": 2,
+      "overall_pct": 55.3,
+      "simple_pct": 75.0,
+      "medium_pct": 36.0,
+      "complex_pct": 54.4,
+      "trap_pct": 36.0,
+      "avg_recalled_per_decision": 2.0,
+      "gates_confirmed": 96,
+      "gates_revised": 52,
+      "total_gates": 9,
+      "gate_book": [
+        {
+          "topic": "noise",
+          "lesson": "When a metric is stable within normal week-to-week variance and shows no meaningful deterioration or opportunity, do not adjust budget or strategy."
+        },
+        {
+          "topic": "audience_saturation",
+          "lesson": "When a campaign shows a significant ROAS drop driven by falling CVR while CTR remains stable, prioritize diagnosing and fixing conversion path issues (e.g., landing page, offer, funnel friction) before cutting budget."
+        },
+        {
+          "topic": "creative_fatigue",
+          "lesson": "When retargeting ROAS drops significantly while CVR remains stable but CTR declines, prioritize diagnosing and optimizing ad visibility, targeting, or creative relevance before assuming a conversion path issue."
+        },
+        {
+          "topic": "emerging_segment",
+          "lesson": "When a narrowly defined audience segment shows significantly higher ROAS than the account average on even a small fraction of spend, immediately allocate dedicated budget and creative testing to that segment before optimizing broader campaigns."
+        },
+        {
+          "topic": "brand_demand_dip",
+          "lesson": "When a high-ROAS, high-intent campaign (e.g., brand search) shows a sudden ROAS drop without corresponding declines in CTR or CVR, avoid intervening \u2014 it likely reflects external demand volatility, not targeting issues, and will often self-correct."
+        },
+        {
+          "topic": "tracking_outage",
+          "lesson": "When ROAS drops sharply in a search campaign while CTR remains stable and clicks are normal, investigate conversion tracking integrity before adjusting targeting."
+        },
+        {
+          "topic": "seasonality",
+          "lesson": "When all campaigns show nearly identical percentage declines in ROAS and similar metrics over the same period, pause interventions and first investigate external factors (e.g., seasonality, market shifts, platform-wide changes) before attributing causality to account-level issues."
+        },
+        {
+          "topic": "learning_phase",
+          "lesson": "When a campaign has recently been rebuilt and is still in its learning phase, avoid making tracking or structural changes that could reset learning progress."
+        },
+        {
+          "topic": "multi",
+          "lesson": "When multiple campaigns show simultaneous ROAS declines with evidence of audience saturation or diminishing returns (e.g., retargeting and generic search both dropping sharply), prioritize systemic intervention\u2014such as audience expansion *and* creative/targeting refreshes\u2014across all underperforming segments, not just the most severely impacted ones."
+        }
+      ]
+    },
+    {
+      "session": 3,
+      "overall_pct": 58.0,
+      "simple_pct": 65.0,
+      "medium_pct": 54.0,
+      "complex_pct": 52.0,
+      "trap_pct": 54.0,
+      "avg_recalled_per_decision": 2.0,
+      "gates_confirmed": 100,
+      "gates_revised": 50,
+      "total_gates": 9,
+      "gate_book": [
+        {
+          "topic": "noise",
+          "lesson": "When a metric is stable within normal week-to-week variance and shows no meaningful deterioration or opportunity, do not adjust budget or strategy."
+        },
+        {
+          "topic": "brand_demand_dip",
+          "lesson": "When a high-ROAS, high-intent campaign (e.g., brand search) shows a sudden ROAS drop without corresponding declines in CTR or CVR, avoid intervening \u2014 it likely reflects external demand volatility, not targeting issues, and will often self-correct."
+        },
+        {
+          "topic": "audience_saturation",
+          "lesson": "When generic search ROAS drops sharply while CTR remains stable but CVR falls significantly, prioritize diagnosing and fixing downstream conversion barriers (e.g., landing page experience, offer relevance, or checkout friction) before assuming the issue is tracking."
+        },
+        {
+          "topic": "creative_fatigue",
+          "lesson": "When a retargeting campaign shows a sharp ROAS decline accompanied by stable or normal CVR but significantly reduced CTR, prioritize diagnosing and fixing ad visibility or delivery issues (e.g., bid constraints, audience reach, creative fatigue, or placement restrictions) before assuming conversion tracking is broken."
+        },
+        {
+          "topic": "emerging_segment",
+          "lesson": "When a narrowly defined audience segment shows significantly higher ROAS than the account average on even a small fraction of spend, prioritize allocating dedicated budget to that audience before increasing budgets on broader campaigns."
+        },
+        {
+          "topic": "tracking_outage",
+          "lesson": "When ROAS drops sharply in a search campaign while CTR remains stable and clicks are normal, investigate conversion tracking integrity before adjusting targeting."
+        },
+        {
+          "topic": "seasonality",
+          "lesson": "When all campaigns show nearly identical percentage declines in ROAS and other metrics simultaneously, prioritize diagnosing external factors (e.g., seasonality, market shifts, platform-wide changes) before implementing campaign-specific fixes."
+        },
+        {
+          "topic": "learning_phase",
+          "lesson": "When a campaign has recently been rebuilt and is still in its learning phase, avoid making tracking or structural changes that could reset learning progress."
+        },
+        {
+          "topic": "multi",
+          "lesson": "When multiple campaigns show simultaneous ROAS declines with divergent root causes (e.g., creative fatigue in retargeting, targeting drift in search), prioritize systemic diagnosis and coordinated intervention across *all* underperforming campaigns\u2014not just the most visibly degraded\u2014before audience growth stalls."
+        }
+      ]
+    },
+    {
+      "session": 4,
+      "overall_pct": 52.7,
+      "simple_pct": 71.0,
+      "medium_pct": 37.5,
+      "complex_pct": 46.5,
+      "trap_pct": 37.5,
+      "avg_recalled_per_decision": 2.0,
+      "gates_confirmed": 80,
+      "gates_revised": 60,
+      "total_gates": 9,
+      "gate_book": [
+        {
+          "topic": "noise",
+          "lesson": "When a metric is stable within normal week-to-week variance and shows no meaningful deterioration or opportunity, do not adjust budget or strategy."
+        },
+        {
+          "topic": "audience_saturation",
+          "lesson": "When generic search ROAS drops sharply while CTR remains stable but CVR falls significantly, prioritize diagnosing and fixing downstream conversion barriers (e.g., landing page experience, offer relevance, or checkout friction) before assuming the issue is tracking."
+        },
+        {
+          "topic": "creative_fatigue",
+          "lesson": "When a retargeting campaign shows a sharp drop in ROAS driven by a significant decline in CTR while CVR remains stable, prioritize diagnosing and optimizing ad creative or audience overlap before adjusting targeting."
+        },
+        {
+          "topic": "emerging_segment",
+          "lesson": "When a narrowly defined audience segment shows a substantially higher ROAS (e.g., +80% or more) on even a small fraction of total spend, immediately allocate incremental budget to test and scale that signal before optimizing within broader campaigns."
+        },
+        {
+          "topic": "tracking_outage",
+          "lesson": "When ROAS drops sharply in a search campaign while CTR remains stable and click volume is normal, prioritize investigating conversion tracking integrity before adjusting targeting."
+        },
+        {
+          "topic": "seasonality",
+          "lesson": "When all campaigns show nearly identical percentage declines in ROAS and similar timing, first verify whether the drop is systemic (e.g., seasonality, platform-wide changes, or external events) before making campaign-specific technical interventions."
+        },
+        {
+          "topic": "brand_demand_dip",
+          "lesson": "When a high-ROAS, stable campaign (e.g., brand search) shows a sudden ROAS drop without corresponding degradation in CTR or CVR, prioritize diagnosing external demand shifts over assuming technical issues \u2014 avoid intervention unless tracking anomalies are confirmed."
+        },
+        {
+          "topic": "learning_phase",
+          "lesson": "When a campaign has recently been rebuilt and is still in its learning phase, avoid making further creative or structural changes until it has fully exited the learning phase."
+        },
+        {
+          "topic": "multi",
+          "lesson": "When a subset of campaigns shows significant ROAS decline while others remain stable, prioritize simultaneous creative refresh AND targeting optimization across all underperforming campaigns\u2014not just the most severely impacted\u2014before new audience growth stalls."
+        }
+      ]
+    },
+    {
+      "session": 5,
+      "overall_pct": 53.3,
+      "simple_pct": 73.0,
+      "medium_pct": 39.5,
+      "complex_pct": 41.5,
+      "trap_pct": 39.5,
+      "avg_recalled_per_decision": 2.0,
+      "gates_confirmed": 88,
+      "gates_revised": 56,
+      "total_gates": 9,
+      "gate_book": [
+        {
+          "topic": "noise",
+          "lesson": "When a metric is stable within normal week-to-week variance and shows no meaningful deterioration or opportunity, do not adjust budget or strategy."
+        },
+        {
+          "topic": "creative_fatigue",
+          "lesson": "When a retargeting campaign shows a sharp drop in ROAS driven by a significant decline in CTR while CVR remains stable, prioritize diagnosing and optimizing ad creative or audience overlap before adjusting targeting."
+        },
+        {
+          "topic": "audience_saturation",
+          "lesson": "When conversion tracking is intact but generic search ROAS drops sharply while CTR remains stable, prioritize diagnosing and fixing downstream conversion barriers (e.g., landing page experience, offer relevance, or checkout friction) before assuming tracking is the issue."
+        },
+        {
+          "topic": "emerging_segment",
+          "lesson": "When a narrowly defined audience segment shows a substantially higher ROAS (e.g., +80% or more) on even a small fraction of total spend, prioritize allocating incremental budget to that segment before rebalancing within broader campaigns."
+        },
+        {
+          "topic": "brand_demand_dip",
+          "lesson": "When a high-ROAS, high-intent campaign (e.g., brand search) shows a sudden ROAS drop without corresponding declines in CTR or CVR, avoid intervening \u2014 it likely reflects external demand volatility, not targeting issues, and will often self-correct."
+        },
+        {
+          "topic": "tracking_outage",
+          "lesson": "When a campaign shows a sudden, severe ROAS drop without corresponding declines in CTR or click volume, prioritize investigating conversion tracking integrity before adjusting targeting."
+        },
+        {
+          "topic": "seasonality",
+          "lesson": "When all campaigns show nearly identical percentage declines across ROAS and similar metrics simultaneously, pause creative changes and first investigate external factors (e.g., seasonality, market shifts, platform-wide changes) before attributing performance drops to campaign-specific issues."
+        },
+        {
+          "topic": "learning_phase",
+          "lesson": "When a campaign has recently been rebuilt or reconfigured and is still in its learning phase, avoid making additional creative or structural changes until it has fully exited the learning phase."
+        },
+        {
+          "topic": "multi",
+          "lesson": "When multiple campaigns show simultaneous ROAS declines with divergent root causes (e.g., creative fatigue in retargeting, targeting inefficiency in generic search), prioritize systemic diagnosis and coordinated intervention across *all* underperforming campaigns\u2014not just the most visibly degraded\u2014before audience growth stalls."
+        }
+      ]
+    }
+  ],
+  "gate_book": [
+    {
+      "topic": "noise",
+      "lesson": "When a metric is stable within normal week-to-week variance and shows no meaningful deterioration or opportunity, do not adjust budget or strategy."
+    },
+    {
+      "topic": "creative_fatigue",
+      "lesson": "When a retargeting campaign shows a sharp drop in ROAS driven by a significant decline in CTR while CVR remains stable, prioritize diagnosing and optimizing ad creative or audience overlap before adjusting targeting."
+    },
+    {
+      "topic": "audience_saturation",
+      "lesson": "When conversion tracking is intact but generic search ROAS drops sharply while CTR remains stable, prioritize diagnosing and fixing downstream conversion barriers (e.g., landing page experience, offer relevance, or checkout friction) before assuming tracking is the issue."
+    },
+    {
+      "topic": "emerging_segment",
+      "lesson": "When a narrowly defined audience segment shows a substantially higher ROAS (e.g., +80% or more) on even a small fraction of total spend, prioritize allocating incremental budget to that segment before rebalancing within broader campaigns."
+    },
+    {
+      "topic": "brand_demand_dip",
+      "lesson": "When a high-ROAS, high-intent campaign (e.g., brand search) shows a sudden ROAS drop without corresponding declines in CTR or CVR, avoid intervening \u2014 it likely reflects external demand volatility, not targeting issues, and will often self-correct."
+    },
+    {
+      "topic": "tracking_outage",
+      "lesson": "When a campaign shows a sudden, severe ROAS drop without corresponding declines in CTR or click volume, prioritize investigating conversion tracking integrity before adjusting targeting."
+    },
+    {
+      "topic": "seasonality",
+      "lesson": "When all campaigns show nearly identical percentage declines across ROAS and similar metrics simultaneously, pause creative changes and first investigate external factors (e.g., seasonality, market shifts, platform-wide changes) before attributing performance drops to campaign-specific issues."
+    },
+    {
+      "topic": "learning_phase",
+      "lesson": "When a campaign has recently been rebuilt or reconfigured and is still in its learning phase, avoid making additional creative or structural changes until it has fully exited the learning phase."
+    },
+    {
+      "topic": "multi",
+      "lesson": "When multiple campaigns show simultaneous ROAS declines with divergent root causes (e.g., creative fatigue in retargeting, targeting inefficiency in generic search), prioritize systemic diagnosis and coordinated intervention across *all* underperforming campaigns\u2014not just the most visibly degraded\u2014before audience growth stalls."
+    }
+  ]
+}

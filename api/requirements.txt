@@ -1,0 +1,4 @@
+# Backend deps for the showcase UI (separate from the core, which stays
+# openai/pytest/matplotlib only per PRD §4).
+fastapi>=0.110
+uvicorn[standard]>=0.29

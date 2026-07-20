@@ -1,0 +1,53 @@
+{
+  "base": "society",
+  "evolution": [
+    {
+      "session": 1,
+      "overall_pct": 74.0,
+      "simple_pct": 35.0,
+      "medium_pct": 100.0,
+      "complex_pct": 100.0,
+      "enforced_gates": 3,
+      "enforced_decisions": 0,
+      "llm_calls": 0,
+      "tree_depth": 6,
+      "tree_rules": "|--- worst_aov_drop <= 0.00\n|   |--- opportunity_lift <= 0.62\n|   |   |--- worst_cvr_drop <= 0.06\n|   |   |   |--- roas_spread <= 8.30\n|   |   |   |   |--- class: refresh_creative\n|   |   |   |--- roas_spread >  8.30\n|   |   |   |   |--- class: refresh_creative\n|   |   |--- worst_cvr_drop >  0.06\n|   |   |   |--- worst_roas_chg <= -26.20\n|   |   |   |   |--- roas_spread <= 25.39\n|   |   |   |   |   |--- roas_spread <= 16.59\n|   |   |   |   |   |   |--- class: PLAN\n|   |   |   |   |   |--- roas_spread >  16.59\n|   |   |   |   |   |   |--- class: fix_landing_page\n|   |   |   |   |--- roas_spread >  25.39\n|   |   |   |   |   |--- class: fix_tracking\n|   |   |   |--- worst_roas_chg >  -26.20\n|   |   |   |   |--- worst_roas_chg <= -16.70\n|   |   |   |   |   |--- class: fix_targeting\n|   |   |   |   |--- worst_roas_chg >  -16.70\n|   |   |   |   |   |--- class: no_action\n|   |--- opportunity_lift >  0.62\n|   |   |--- class: PLAN\n|--- worst_aov_drop >  0.00\n|   |--- second_roas_chg <= -0.40\n|   |   |--- budget_flag <= 0.50\n|   |   |   |--- class: no_action\n|   |   |--- budget_flag >  0.50\n|   |   |   |--- class: increase_budget\n|   |--- second_roas_chg >  -0.40\n|   |   |--- class: launch_campaign\n"
+    },
+    {
+      "session": 2,
+      "overall_pct": 98.4,
+      "simple_pct": 96.0,
+      "medium_pct": 100.0,
+      "complex_pct": 100.0,
+      "enforced_gates": 3,
+      "enforced_decisions": 28,
+      "llm_calls": 0,
+      "tree_depth": 6,
+      "tree_rules": "|--- worst_aov_drop <= 0.00\n|   |--- opportunity_lift <= 0.62\n|   |   |--- worst_cvr_drop <= 0.06\n|   |   |   |--- roas_spread <= 8.52\n|   |   |   |   |--- class: refresh_creative\n|   |   |   |--- roas_spread >  8.52\n|   |   |   |   |--- class: PLAN\n|   |   |--- worst_cvr_drop >  0.06\n|   |   |   |--- worst_roas_chg <= -26.20\n|   |   |   |   |--- roas_spread <= 25.39\n|   |   |   |   |   |--- worst_cvr_drop <= 0.26\n|   |   |   |   |   |   |--- class: PLAN\n|   |   |   |   |   |--- worst_cvr_drop >  0.26\n|   |   |   |   |   |   |--- class: fix_landing_page\n|   |   |   |   |--- roas_spread >  25.39\n|   |   |   |   |   |--- class: fix_tracking\n|   |   |   |--- worst_roas_chg >  -26.20\n|   |   |   |   |--- worst_roas_chg <= -16.70\n|   |   |   |   |   |--- class: fix_targeting\n|   |   |   |   |--- worst_roas_chg >  -16.70\n|   |   |   |   |   |--- class: no_action\n|   |--- opportunity_lift >  0.62\n|   |   |--- class: PLAN\n|--- worst_aov_drop >  0.00\n|   |--- second_roas_chg <= -0.40\n|   |   |--- budget_flag <= 0.50\n|   |   |   |--- class: no_action\n|   |   |--- budget_flag >  0.50\n|   |   |   |--- class: increase_budget\n|   |--- second_roas_chg >  -0.40\n|   |   |--- class: launch_campaign\n"
+    },
+    {
+      "session": 3,
+      "overall_pct": 99.2,
+      "simple_pct": 98.0,
+      "medium_pct": 100.0,
+      "complex_pct": 100.0,
+      "enforced_gates": 3,
+      "enforced_decisions": 29,
+      "llm_calls": 0,
+      "tree_depth": 6,
+      "tree_rules": "|--- worst_aov_drop <= 0.00\n|   |--- opportunity_lift <= 0.62\n|   |   |--- worst_cvr_drop <= 0.06\n|   |   |   |--- worst_pacing <= 0.67\n|   |   |   |   |--- class: refresh_creative\n|   |   |   |--- worst_pacing >  0.67\n|   |   |   |   |--- class: PLAN\n|   |   |--- worst_cvr_drop >  0.06\n|   |   |   |--- roas_spread <= 10.95\n|   |   |   |   |--- worst_aov_drop <= 0.00\n|   |   |   |   |   |--- class: no_action\n|   |   |   |   |--- worst_aov_drop >  0.00\n|   |   |   |   |   |--- class: fix_targeting\n|   |   |   |--- roas_spread >  10.95\n|   |   |   |   |--- worst_cvr_drop <= 0.63\n|   |   |   |   |   |--- worst_cvr_drop <= 0.26\n|   |   |   |   |   |   |--- class: PLAN\n|   |   |   |   |   |--- worst_cvr_drop >  0.26\n|   |   |   |   |   |   |--- class: fix_landing_page\n|   |   |   |   |--- worst_cvr_drop >  0.63\n|   |   |   |   |   |--- class: fix_tracking\n|   |--- opportunity_lift >  0.62\n|   |   |--- class: PLAN\n|--- worst_aov_drop >  0.00\n|   |--- second_roas_chg <= -0.40\n|   |   |--- budget_flag <= 0.50\n|   |   |   |--- class: no_action\n|   |   |--- budget_flag >  0.50\n|   |   |   |--- class: increase_budget\n|   |--- second_roas_chg >  -0.40\n|   |   |--- class: launch_campaign\n"
+    },
+    {
+      "session": 4,
+      "overall_pct": 100.0,
+      "simple_pct": 100.0,
+      "medium_pct": 100.0,
+      "complex_pct": 100.0,
+      "enforced_gates": 3,
+      "enforced_decisions": 30,
+      "llm_calls": 0,
+      "tree_depth": 6,
+      "tree_rules": "|--- worst_aov_drop <= 0.00\n|   |--- opportunity_lift <= 0.62\n|   |   |--- worst_cvr_drop <= 0.06\n|   |   |   |--- worst_pacing <= 0.67\n|   |   |   |   |--- class: refresh_creative\n|   |   |   |--- worst_pacing >  0.67\n|   |   |   |   |--- class: PLAN\n|   |   |--- worst_cvr_drop >  0.06\n|   |   |   |--- worst_roas_chg <= -26.20\n|   |   |   |   |--- roas_spread <= 25.39\n|   |   |   |   |   |--- worst_cvr_drop <= 0.26\n|   |   |   |   |   |   |--- class: PLAN\n|   |   |   |   |   |--- worst_cvr_drop >  0.26\n|   |   |   |   |   |   |--- class: fix_landing_page\n|   |   |   |   |--- roas_spread >  25.39\n|   |   |   |   |   |--- class: fix_tracking\n|   |   |   |--- worst_roas_chg >  -26.20\n|   |   |   |   |--- worst_roas_chg <= -16.70\n|   |   |   |   |   |--- class: fix_targeting\n|   |   |   |   |--- worst_roas_chg >  -16.70\n|   |   |   |   |   |--- class: no_action\n|   |--- opportunity_lift >  0.62\n|   |   |--- class: PLAN\n|--- worst_aov_drop >  0.00\n|   |--- second_roas_chg <= -0.40\n|   |   |--- budget_flag <= 0.50\n|   |   |   |--- class: no_action\n|   |   |--- budget_flag >  0.50\n|   |   |   |--- class: increase_budget\n|   |--- second_roas_chg >  -0.40\n|   |   |--- class: launch_campaign\n"
+    }
+  ]
+}

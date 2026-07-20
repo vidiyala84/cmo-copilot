@@ -1,0 +1,77 @@
+{
+  "points": [
+    {
+      "brief_tokens": 156,
+      "metrics_json_tokens": 533,
+      "full_prompt_tokens": 369,
+      "n": 5
+    },
+    {
+      "brief_tokens": 732,
+      "metrics_json_tokens": 2687,
+      "full_prompt_tokens": 945,
+      "n": 25
+    },
+    {
+      "brief_tokens": 1457,
+      "metrics_json_tokens": 5384,
+      "full_prompt_tokens": 1670,
+      "n": 50
+    },
+    {
+      "brief_tokens": 2895,
+      "metrics_json_tokens": 10768,
+      "full_prompt_tokens": 3108,
+      "n": 100
+    },
+    {
+      "brief_tokens": 5849,
+      "metrics_json_tokens": 21613,
+      "full_prompt_tokens": 6062,
+      "n": 200
+    },
+    {
+      "brief_tokens": 14666,
+      "metrics_json_tokens": 54100,
+      "full_prompt_tokens": 14879,
+      "n": 500
+    },
+    {
+      "brief_tokens": 29334,
+      "metrics_json_tokens": 108215,
+      "full_prompt_tokens": 29547,
+      "n": 1000
+    },
+    {
+      "brief_tokens": 59201,
+      "metrics_json_tokens": 216979,
+      "full_prompt_tokens": 59414,
+      "n": 2000
+    }
+  ],
+  "live": [
+    {
+      "n": 5,
+      "latency_s": 5.11,
+      "input_tokens": 563,
+      "output_tokens": 124
+    },
+    {
+      "n": 50,
+      "latency_s": 4.07,
+      "input_tokens": 3661,
+      "output_tokens": 180
+    },
+    {
+      "n": 200,
+      "latency_s": 5.07,
+      "input_tokens": 14223,
+      "output_tokens": 175
+    }
+  ],
+  "context_limits": {
+    "qwen-32k window": 32000,
+    "128k window": 128000
+  },
+  "note": "Prompt tokens grow linearly (~O(N)) with campaign count. 'Read the whole account' hits the context window, then cost/latency, as N grows."
+}

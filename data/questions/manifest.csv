@@ -1,0 +1,101 @@
+question_id,difficulty,name,correct_answer,n_rows,n_campaigns,n_days,file
+SIM001,simple,Creative fatigue on G3,creative_fatigue -> refresh_creative,27000,300,90,questions/SIM001.parquet
+SIM002,simple,Audience saturating on G4,audience_saturation -> fix_targeting,27000,300,90,questions/SIM002.parquet
+SIM003,simple,Emerging audience worth a new campaign,emerging_segment -> launch_campaign,27000,300,90,questions/SIM003.parquet
+SIM004,simple,Normal weekly fluctuation,noise -> no_action,27000,300,90,questions/SIM004.parquet
+SIM005,simple,Creative fatigue on G3,creative_fatigue -> refresh_creative,27000,300,90,questions/SIM005.parquet
+SIM006,simple,Audience saturating on G4,audience_saturation -> fix_targeting,27000,300,90,questions/SIM006.parquet
+SIM007,simple,Emerging audience worth a new campaign,emerging_segment -> launch_campaign,27000,300,90,questions/SIM007.parquet
+SIM008,simple,Normal weekly fluctuation,noise -> no_action,27000,300,90,questions/SIM008.parquet
+SIM009,simple,Creative fatigue on G3,creative_fatigue -> refresh_creative,27000,300,90,questions/SIM009.parquet
+SIM010,simple,Audience saturating on G4,audience_saturation -> fix_targeting,27000,300,90,questions/SIM010.parquet
+SIM011,simple,Emerging audience worth a new campaign,emerging_segment -> launch_campaign,27000,300,90,questions/SIM011.parquet
+SIM012,simple,Normal weekly fluctuation,noise -> no_action,27000,300,90,questions/SIM012.parquet
+SIM013,simple,Creative fatigue on G3,creative_fatigue -> refresh_creative,27000,300,90,questions/SIM013.parquet
+SIM014,simple,Audience saturating on G4,audience_saturation -> fix_targeting,27000,300,90,questions/SIM014.parquet
+SIM015,simple,Emerging audience worth a new campaign,emerging_segment -> launch_campaign,27000,300,90,questions/SIM015.parquet
+SIM016,simple,Normal weekly fluctuation,noise -> no_action,27000,300,90,questions/SIM016.parquet
+SIM017,simple,Creative fatigue on G3,creative_fatigue -> refresh_creative,27000,300,90,questions/SIM017.parquet
+SIM018,simple,Audience saturating on G4,audience_saturation -> fix_targeting,27000,300,90,questions/SIM018.parquet
+SIM019,simple,Emerging audience worth a new campaign,emerging_segment -> launch_campaign,27000,300,90,questions/SIM019.parquet
+SIM020,simple,Normal weekly fluctuation,noise -> no_action,27000,300,90,questions/SIM020.parquet
+SIM021,simple,Creative fatigue on G3,creative_fatigue -> refresh_creative,27000,300,90,questions/SIM021.parquet
+SIM022,simple,Audience saturating on G4,audience_saturation -> fix_targeting,27000,300,90,questions/SIM022.parquet
+SIM023,simple,Emerging audience worth a new campaign,emerging_segment -> launch_campaign,27000,300,90,questions/SIM023.parquet
+SIM024,simple,Normal weekly fluctuation,noise -> no_action,27000,300,90,questions/SIM024.parquet
+SIM025,simple,Creative fatigue on G3,creative_fatigue -> refresh_creative,27000,300,90,questions/SIM025.parquet
+SIM026,simple,Audience saturating on G4,audience_saturation -> fix_targeting,27000,300,90,questions/SIM026.parquet
+SIM027,simple,Emerging audience worth a new campaign,emerging_segment -> launch_campaign,27000,300,90,questions/SIM027.parquet
+SIM028,simple,Normal weekly fluctuation,noise -> no_action,27000,300,90,questions/SIM028.parquet
+SIM029,simple,Creative fatigue on G3,creative_fatigue -> refresh_creative,27000,300,90,questions/SIM029.parquet
+SIM030,simple,Audience saturating on G4,audience_saturation -> fix_targeting,27000,300,90,questions/SIM030.parquet
+SIM031,simple,Emerging audience worth a new campaign,emerging_segment -> launch_campaign,27000,300,90,questions/SIM031.parquet
+SIM032,simple,Normal weekly fluctuation,noise -> no_action,27000,300,90,questions/SIM032.parquet
+SIM033,simple,Creative fatigue on G3,creative_fatigue -> refresh_creative,27000,300,90,questions/SIM033.parquet
+SIM034,simple,Audience saturating on G4,audience_saturation -> fix_targeting,27000,300,90,questions/SIM034.parquet
+SIM035,simple,Emerging audience worth a new campaign,emerging_segment -> launch_campaign,27000,300,90,questions/SIM035.parquet
+SIM036,simple,Normal weekly fluctuation,noise -> no_action,27000,300,90,questions/SIM036.parquet
+SIM037,simple,Creative fatigue on G3,creative_fatigue -> refresh_creative,27000,300,90,questions/SIM037.parquet
+SIM038,simple,Audience saturating on G4,audience_saturation -> fix_targeting,27000,300,90,questions/SIM038.parquet
+SIM039,simple,Emerging audience worth a new campaign,emerging_segment -> launch_campaign,27000,300,90,questions/SIM039.parquet
+SIM040,simple,Normal weekly fluctuation,noise -> no_action,27000,300,90,questions/SIM040.parquet
+MED001,medium,Tracking outage on G3 (looks like decay),tracking_outage -> fix_tracking,27000,300,90,questions/MED001.parquet
+MED002,medium,Seasonal dip across the board,seasonality -> no_action,27000,300,90,questions/MED002.parquet
+MED003,medium,Brand demand dip (floor trap),brand_demand_dip -> no_action,27000,300,90,questions/MED003.parquet
+MED004,medium,Learning-phase wobble on G4 (patience),learning_phase -> no_action,27000,300,90,questions/MED004.parquet
+MED005,medium,G3 winning but capped by budget,budget_cap -> increase_budget (G3),27000,300,90,questions/MED005.parquet
+MED006,medium,Tracking outage on G4 (looks like decay),tracking_outage -> fix_tracking,27000,300,90,questions/MED006.parquet
+MED007,medium,Seasonal dip across the board,seasonality -> no_action,27000,300,90,questions/MED007.parquet
+MED008,medium,Brand demand dip (floor trap),brand_demand_dip -> no_action,27000,300,90,questions/MED008.parquet
+MED009,medium,Learning-phase wobble on G3 (patience),learning_phase -> no_action,27000,300,90,questions/MED009.parquet
+MED010,medium,G4 winning but capped by budget,budget_cap -> increase_budget (G4),27000,300,90,questions/MED010.parquet
+MED011,medium,Tracking outage on G3 (looks like decay),tracking_outage -> fix_tracking,27000,300,90,questions/MED011.parquet
+MED012,medium,Seasonal dip across the board,seasonality -> no_action,27000,300,90,questions/MED012.parquet
+MED013,medium,Brand demand dip (floor trap),brand_demand_dip -> no_action,27000,300,90,questions/MED013.parquet
+MED014,medium,Learning-phase wobble on G4 (patience),learning_phase -> no_action,27000,300,90,questions/MED014.parquet
+MED015,medium,G3 winning but capped by budget,budget_cap -> increase_budget (G3),27000,300,90,questions/MED015.parquet
+MED016,medium,Tracking outage on G4 (looks like decay),tracking_outage -> fix_tracking,27000,300,90,questions/MED016.parquet
+MED017,medium,Seasonal dip across the board,seasonality -> no_action,27000,300,90,questions/MED017.parquet
+MED018,medium,Brand demand dip (floor trap),brand_demand_dip -> no_action,27000,300,90,questions/MED018.parquet
+MED019,medium,Learning-phase wobble on G3 (patience),learning_phase -> no_action,27000,300,90,questions/MED019.parquet
+MED020,medium,G4 winning but capped by budget,budget_cap -> increase_budget (G4),27000,300,90,questions/MED020.parquet
+MED021,medium,Tracking outage on G3 (looks like decay),tracking_outage -> fix_tracking,27000,300,90,questions/MED021.parquet
+MED022,medium,Seasonal dip across the board,seasonality -> no_action,27000,300,90,questions/MED022.parquet
+MED023,medium,Brand demand dip (floor trap),brand_demand_dip -> no_action,27000,300,90,questions/MED023.parquet
+MED024,medium,Learning-phase wobble on G4 (patience),learning_phase -> no_action,27000,300,90,questions/MED024.parquet
+MED025,medium,G3 winning but capped by budget,budget_cap -> increase_budget (G3),27000,300,90,questions/MED025.parquet
+MED026,medium,Tracking outage on G4 (looks like decay),tracking_outage -> fix_tracking,27000,300,90,questions/MED026.parquet
+MED027,medium,Seasonal dip across the board,seasonality -> no_action,27000,300,90,questions/MED027.parquet
+MED028,medium,Brand demand dip (floor trap),brand_demand_dip -> no_action,27000,300,90,questions/MED028.parquet
+MED029,medium,Learning-phase wobble on G3 (patience),learning_phase -> no_action,27000,300,90,questions/MED029.parquet
+MED030,medium,G4 winning but capped by budget,budget_cap -> increase_budget (G4),27000,300,90,questions/MED030.parquet
+MED031,medium,Tracking outage on G3 (looks like decay),tracking_outage -> fix_tracking,27000,300,90,questions/MED031.parquet
+MED032,medium,Seasonal dip across the board,seasonality -> no_action,27000,300,90,questions/MED032.parquet
+MED033,medium,Brand demand dip (floor trap),brand_demand_dip -> no_action,27000,300,90,questions/MED033.parquet
+MED034,medium,Learning-phase wobble on G4 (patience),learning_phase -> no_action,27000,300,90,questions/MED034.parquet
+MED035,medium,G3 winning but capped by budget,budget_cap -> increase_budget (G3),27000,300,90,questions/MED035.parquet
+MED036,medium,Tracking outage on G4 (looks like decay),tracking_outage -> fix_tracking,27000,300,90,questions/MED036.parquet
+MED037,medium,Seasonal dip across the board,seasonality -> no_action,27000,300,90,questions/MED037.parquet
+MED038,medium,Brand demand dip (floor trap),brand_demand_dip -> no_action,27000,300,90,questions/MED038.parquet
+MED039,medium,Learning-phase wobble on G3 (patience),learning_phase -> no_action,27000,300,90,questions/MED039.parquet
+MED040,medium,G4 winning but capped by budget,budget_cap -> increase_budget (G4),27000,300,90,questions/MED040.parquet
+CPX001,complex,5 simultaneous items (incl. a group with two fixes),PLAN: refresh_creative@G3; fix_targeting@G3; refresh_creative@G4; fix_targeting@G4; launch_campaign@NEW,27000,300,90,questions/CPX001.parquet
+CPX002,complex,5 simultaneous items (incl. a group with two fixes),PLAN: refresh_creative@G3; fix_targeting@G3; refresh_creative@G4; fix_targeting@G4; launch_campaign@NEW,27000,300,90,questions/CPX002.parquet
+CPX003,complex,3 simultaneous items (incl. a group with two fixes),PLAN: refresh_creative@G3; fix_targeting@G4; launch_campaign@NEW,27000,300,90,questions/CPX003.parquet
+CPX004,complex,4 simultaneous items (incl. a group with two fixes),PLAN: refresh_creative@G3; refresh_creative@G4; fix_targeting@G4; launch_campaign@NEW,27000,300,90,questions/CPX004.parquet
+CPX005,complex,4 simultaneous items (incl. a group with two fixes),PLAN: fix_targeting@G3; refresh_creative@G4; fix_targeting@G4; launch_campaign@NEW,27000,300,90,questions/CPX005.parquet
+CPX006,complex,3 simultaneous items (incl. a group with two fixes),PLAN: refresh_creative@G3; refresh_creative@G4; fix_targeting@G4,27000,300,90,questions/CPX006.parquet
+CPX007,complex,3 simultaneous items (incl. a group with two fixes),PLAN: fix_targeting@G3; refresh_creative@G4; launch_campaign@NEW,27000,300,90,questions/CPX007.parquet
+CPX008,complex,5 simultaneous items (incl. a group with two fixes),PLAN: refresh_creative@G3; fix_targeting@G3; refresh_creative@G4; fix_targeting@G4; launch_campaign@NEW,27000,300,90,questions/CPX008.parquet
+CPX009,complex,2 simultaneous items (incl. a group with two fixes),PLAN: fix_targeting@G3; launch_campaign@NEW,27000,300,90,questions/CPX009.parquet
+CPX010,complex,4 simultaneous items (incl. a group with two fixes),PLAN: refresh_creative@G3; refresh_creative@G4; fix_targeting@G4; launch_campaign@NEW,27000,300,90,questions/CPX010.parquet
+CPX011,complex,2 simultaneous items (incl. a group with two fixes),PLAN: refresh_creative@G3; refresh_creative@G4,27000,300,90,questions/CPX011.parquet
+CPX012,complex,3 simultaneous items (incl. a group with two fixes),PLAN: refresh_creative@G3; fix_targeting@G4; launch_campaign@NEW,27000,300,90,questions/CPX012.parquet
+CPX013,complex,3 simultaneous items (incl. a group with two fixes),PLAN: refresh_creative@G3; fix_targeting@G4; launch_campaign@NEW,27000,300,90,questions/CPX013.parquet
+CPX014,complex,4 simultaneous items (incl. a group with two fixes),PLAN: refresh_creative@G3; fix_targeting@G3; refresh_creative@G4; launch_campaign@NEW,27000,300,90,questions/CPX014.parquet
+CPX015,complex,4 simultaneous items (incl. a group with two fixes),PLAN: refresh_creative@G3; fix_targeting@G3; refresh_creative@G4; launch_campaign@NEW,27000,300,90,questions/CPX015.parquet
+CPX016,complex,4 simultaneous items (incl. a group with two fixes),PLAN: refresh_creative@G3; fix_targeting@G3; refresh_creative@G4; launch_campaign@NEW,27000,300,90,questions/CPX016.parquet
+CPX017,complex,3 simultaneous items (incl. a group with two fixes),PLAN: refresh_creative@G3; fix_targeting@G4; launch_campaign@NEW,27000,300,90,questions/CPX017.parquet
+CPX018,complex,2 simultaneous items (incl. a group with two fixes),PLAN: refresh_creative@G3; launch_campaign@NEW,27000,300,90,questions/CPX018.parquet
+CPX019,complex,2 simultaneous items (incl. a group with two fixes),PLAN: fix_targeting@G4; launch_campaign@NEW,27000,300,90,questions/CPX019.parquet
+CPX020,complex,4 simultaneous items (incl. a group with two fixes),PLAN: refresh_creative@G3; fix_targeting@G3; refresh_creative@G4; fix_targeting@G4,27000,300,90,questions/CPX020.parquet

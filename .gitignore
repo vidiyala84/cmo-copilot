@@ -1,0 +1,50 @@
+# Secrets — never commit
+.env
+
+# macOS junk
+.DS_Store
+
+# Generated dataset — rebuild with `python datagen.py`. 2.7MB of derived rows
+# that go stale the moment config.GROUPS changes.
+data/*.csv
+
+# Per-question raw datasets (57MB, regenerable with `python export_data.py`).
+# The manifest.csv is kept; the parquet binaries are not committed.
+data/questions/*.parquet
+
+# Run artifacts.
+#
+# `runs/` holds two different things:
+#   - churn: per-invocation results_*.json, sqlite stores, raw transcripts
+#   - evidence: the published numbers the UI and README actually read
+#
+# The UI reads 9 files from here (see api/main.py). If the whole directory is
+# ignored, a fresh clone renders empty pages and the demo is broken for everyone
+# but us. So: ignore the contents, then re-admit the published evidence.
+# `runs/*` rather than `runs/` is deliberate — git does not descend into an
+# excluded directory, so negations under `runs/` would never fire.
+runs/*
+!runs/.gitkeep
+
+# --- current (Qwen Cloud) results only ---
+!runs/.gitkeep
+!runs/scaling.json
+!runs/benchmark_live.json
+!runs/benchmark_comparison.md
+!runs/memory_gates_evolution.json
+!runs/memory_llm_evolution.json
+
+# SQLite memory stores (rebuilt per run)
+*.db
+*.db-journal
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Node / Next.js (web UI)
+web/node_modules/
+web/.next/
+web/.env.local
+web/out/

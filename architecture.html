@@ -1,0 +1,79 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1600px;height:1160px;overflow:hidden}
+body{background:radial-gradient(1600px 1160px at 82% 6%,#141d3a 0%,#0b1020 62%);
+  color:#e7ecf5;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  padding:44px 56px 40px;position:relative}
+.head{display:flex;align-items:baseline;gap:18px;margin-bottom:6px}
+h1{font-size:40px;font-weight:800;letter-spacing:-.02em}
+h1 .d{color:#FF8431}
+.sub{color:#9fb0d0;font-size:20px}
+.tierlabel{color:#6f80a8;font-size:14px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;margin:14px 0 9px}
+.row{display:flex;gap:16px;align-items:stretch}
+.box{background:#141b30;border:1px solid #2a3557;border-radius:14px;padding:15px 18px;flex:1}
+.box .t{font-size:20px;font-weight:700;margin-bottom:4px}
+.box .s{color:#93a4c8;font-size:15px;line-height:1.35}
+.box .mono{font-family:ui-monospace,Menlo,monospace;font-size:13.5px;color:#8fa2cc}
+.arrow{display:flex;justify-content:center;color:#4a5a86;font-size:26px;margin:5px 0}
+.cloud{border:1.5px dashed #35507e;border-radius:16px;padding:12px 16px 16px;position:relative;background:rgba(20,40,74,.28)}
+.cloud .badge{position:absolute;top:-13px;left:22px;background:#0b1020;color:#7fb0ff;font-size:13px;font-weight:800;letter-spacing:.06em;padding:2px 12px;border:1px solid #35507e;border-radius:999px}
+.chip{display:inline-block;background:#0d1630;border:1px solid #2a3557;color:#c7d3ee;border-radius:999px;padding:5px 12px;font-size:14px;font-weight:600;margin:5px 6px 0 0}
+.chip.risk{border-color:#FF8431;color:#FFB07B}
+.decide{display:flex;gap:16px;align-items:stretch}
+.decide .society{flex:1.55}.decide .mem{flex:1}
+.mem{background:linear-gradient(180deg,#10261c,#0d1a26);border:1.5px solid #2FB67C}
+.mem .t{color:#7ee2ad}
+.tolab{align-self:center;color:#7ee2ad;font-size:13px;font-weight:700;text-align:center;white-space:nowrap;padding:0 2px}
+.qwen{background:linear-gradient(180deg,#231327,#1a1030);border:1.5px solid #FF8431;text-align:center;padding:17px}
+.qwen .t{font-size:22px;color:#FFB07B}
+.accent{color:#FF8431}
+.loop{position:absolute;right:16px;top:474px;width:132px;height:266px;pointer-events:none}
+.loop text{fill:#7ee2ad;font-size:14px;font-weight:700;font-family:-apple-system,sans-serif}
+</style></head><body>
+  <div class="head"><h1>CMO Copilot<span class="d">.</span></h1><span class="sub">System architecture — Qwen on Alibaba Cloud Model Studio</span></div>
+
+  <div class="tierlabel">Clients</div>
+  <div class="row">
+    <div class="box"><div class="t">🖥️ Interactive demo</div><div class="s">the deployed web page — pick a scenario, run it, watch the steps</div></div>
+    <div class="box"><div class="t">🔌 MCP client</div><div class="s">any Model Context Protocol host, via the tool server</div></div>
+    <div class="box"><div class="t">🧪 REST / CI</div><div class="s">JSON API · 170 offline tests · reproducible</div></div>
+  </div>
+  <div class="arrow">▼</div>
+
+  <div class="cloud"><span class="badge">ALIBABA CLOUD · ECS (Docker)</span>
+    <div class="row">
+      <div class="box"><div class="t">FastAPI backend</div><div class="s mono">api/main.py — landing page + REST, runs the agents on request</div></div>
+      <div class="box"><div class="t">MCP server</div><div class="s mono">cmo/mcp_server.py — exposes the 7 tools over MCP</div></div>
+    </div>
+  </div>
+  <div class="arrow">▼</div>
+
+  <div class="tierlabel">Decision layer</div>
+  <div class="decide">
+    <div class="box society"><div class="t">👥 6-agent Qwen society</div>
+      <div class="s">specialists debate the call; the risk officer can veto a bad move</div>
+      <div><span class="chip">Analyst</span><span class="chip">Forecaster</span><span class="chip risk">Risk Officer ⛔ veto</span><span class="chip">Portfolio Planner</span><span class="chip">Growth Lead</span><span class="chip">Coordinator</span></div>
+    </div>
+    <div class="tolab">gates&nbsp;&&nbsp;overrides&nbsp;→</div>
+    <div class="box mem"><div class="t">🧠 Learned memory gate</div>
+      <div class="s">a decision tree fit on the system's own outcome history — keeps a gate only if it <b>mattered</b>, then enforces it deterministically (0 LLM calls)</div>
+    </div>
+  </div>
+  <div class="arrow">▼</div>
+
+  <div class="tierlabel">Shared engine · <span class="mono" style="text-transform:none;letter-spacing:0;color:#6f80a8">cmo/</span></div>
+  <div class="row">
+    <div class="box"><div class="t">🛠️ Tool belt</div><div class="s mono">metrics · diagnose_drivers · find_opportunities · recommend_portfolio · forecast · propose_reallocation (constraint-checked)</div></div>
+    <div class="box"><div class="t">📊 Synthetic account</div><div class="s">~300 campaigns → 5 groups · deterministic (seed 42) · O(groups) context</div></div>
+  </div>
+  <div class="arrow">▼</div>
+
+  <div class="box qwen"><div class="t">⚡ Qwen · Alibaba Cloud Model Studio (DashScope)</div>
+    <div class="s" style="color:#e7d3c4;font-size:16px;margin-top:4px"><b>qwen-plus</b> orchestrate · <b>qwen-flash</b> cheap sub-tasks · <b>qwen-max</b> synthesis · <b>text-embedding-v3</b> memory retrieval</div>
+  </div>
+
+  <svg class="loop"><defs><marker id="a" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6" fill="none" stroke="#2FB67C" stroke-width="1.6"/></marker></defs>
+    <path d="M118,250 C118,120 118,70 70,20" fill="none" stroke="#2FB67C" stroke-width="2" stroke-dasharray="5 5" marker-end="url(#a)"/>
+    <text x="128" y="150" text-anchor="end" transform="rotate(90 128 150)">learns from each outcome</text>
+  </svg>
+</body></html>

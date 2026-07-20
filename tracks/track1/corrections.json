@@ -1,0 +1,23 @@
+[
+  {
+    "after_session": 1,
+    "kind": "preference",
+    "campaign_id": "G2",
+    "topic": "pref_brand_floor",
+    "text": "Never move budget out of C2 (brand). A brand-demand dip is external and temporary — hold, don't reallocate.",
+    "confidence": 1.0,
+    "payload": {
+      "forbid_source": "G2",
+      "problem_campaign": "G2",
+      "set": {"root_cause": "brand_demand_dip", "action": "no_action"}
+    }
+  },
+  {
+    "after_session": 1,
+    "kind": "preference",
+    "topic": "pref_shift_cap",
+    "text": "Conservative shifts only: never move more than 15% of a campaign's budget per week.",
+    "confidence": 1.0,
+    "payload": {"max_shift_pct": 15}
+  }
+]
